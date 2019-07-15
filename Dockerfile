@@ -10,7 +10,6 @@ RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.8/main" > /etc/apk/repos
  && git clone https://github.com/mapbox/tippecanoe.git tippecanoe \
  && cd tippecanoe \
  && git checkout tags/$TIPPECANOE_RELEASE \
- && cd tippecanoe \
  && make -j2 \
  && make install
 
